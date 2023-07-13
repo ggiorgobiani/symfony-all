@@ -1,0 +1,48 @@
+## Pages
+- Accueil
+
+- Liste des livres
+- Création d'un livre *
+- Détails d'un livre
+- Modification d'un livre *
+- Suppression d'un livre *
+
+- Création d'un compte utilisateur (register)
+- Connexion (login)
+- Déconnexion (logout)
+
+- Mon profil *
+
+* Page sécurisée
+
+
+## Routes (path)
+- /                                     Homepage
+
+- /books                                INDEX
+- /book                                 CREATE
+- /book/{id}                            READ
+- /book/{id}/edit                       UPDATE
+- /book/{id}/delete                     DELETE
+
+- /register                             Création du compte utilisateur
+- /login                                Connexion
+- /logout                               Déconnexion
+
+- /profile                              Profil utilisateur
+
+
+## Controllers
+- HomepageController::index()
+
+- BookController::index()
+- BookController::create()
+- BookController::read()
+- BookController::update()
+- BookController::delete()
+
+- RegisterController::index()
+- SecurityController::login()
+- SecurityController::logout()
+
+- ProfileController::index()

@@ -1,0 +1,195 @@
+
+pour voir le fichier ou on se trouve c'est PWD dans terminal 
+si on est pas en bon endroit il faut ecrire CD et la route vers le bon repertoire
+
+
+
+1 methode.
+php -S localhost:1411 -t public/      ---- pour créer (nommer) localhost 
+
+
+
+
+2 methode.
+il faut créer un dossier .vscode et un fichier serve.sh dans ce dossier 
+puis il faut mettre (adresse de localhost)-php -S localhost:1411 -t public/      ---- pour créer (nommer) localhost 
+
+il faut ecrir .vscode/serve.sh  pou demarer le localhost facilement sans retaper tout
+
+
+
+
+pour creer un projet 
+composer create-project symfony/website-skeleton   projectname "5.4.*"
+
+
+
+pour creer un controller
+il faut tapper dans le terminal bin/console make:controller( an php bin/console make:controller) da saxeli bolos
+x
+
+
+
+pour le github
+    git init
+    git add* 
+    git commit -m "my firt commit"
+
+
+
+
+pour debuger dump and die
+dd($name)
+
+pour copier les fichiers .env  en  .env.dist et .env.local
+cp .env  .env.dist
+cp .env  .env.local
+
+
+
+composer require annotations 
+
+
+
+pour créer un database
+php bin/console doctrine:database:create
+ou en racourcis  bin/console d:d:c
+
+
+
+pour migration des tables databases
+php bin/console make:migration
+puis
+php bin/console d:m:m (doctrine:migrations:migrate)
+
+
+
+
+pour installer les fixtures
+composer require orm-fixtures --dev   
+
+
+
+php bin/console make:user
+php bin/console make:registration-form
+
+
+pour les fixtures
+php bin/console doctrine:fixture:load
+php bin/console d:f:l
+
+
+pour debug
+php bin/console debug:router
+
+
+
+pour créer la form
+php bin/console make:form
+
+
+dans le system de routage CRUD il faut respecter qui veut dire 
+l'ordre des routes
+-index
+-create
+-read
+-update
+-delete
+
+
+
+pour la database quand on ecrit la date de creation il faut AT a la fin (createAt)
+et quand on veut avoir un boolean il faut IS au debut de no (isPublished)
+
+
+
+
+
+
+ctrl + shift + L --- es gamosadegia yvela erti da igive sityvis mosanishnad
+
+
+
+
+
+composer require annotations  - pour un problem de autowire
+
+
+
+
+c'est un popper qui permet le bootstrap d'afficher les menus deroulant etc
+ npm i @popperjs/core
+
+
+
+----composer update
+----composer require symfony/webpack-encore-bundle    c'est pour installer webpack
+----npm install -global yarn     et puis ->   yarn install    
+----yarn encore dev            c'est  pour compilation 
+----yarn encore dev --watch
+
+
+
+
+
+
+
+il faut ouvrir 3 terminaux 
+1-pour server lance 
+2-pour yarn encore dev --watch
+3-pour travailler
+
+
+
+
+-----npm i bootstrap     c'est pour telecharger le bootstrap
+
+
+
+creation de liaison entre deux tables (deux entity)
+-- il faut tapper la creation d'entity A dans le terminal
+il va nous ecrire qu'il exist deja et si on veut ajouter quelque chose a l'interieur
+on choisi oui et on ajoute le nom d'entity B  puis  il nous pose des questions
+il faut choisir relation a la place de string et puis type de liaison.
+puis migration dans la base de donnée
+
+
+
+
+
+
+
+
+composer require symfony/orm-pack    ----c'est pour le back (skeleton sans website/)
+puis   composer require --dev symfony/maker-bundle
+
+
+composer require doctrine/annotations   --- pour un problem
+
+
+Thunder client -> Collection -> new collection (test symfony) 
+-> new request (all heroes) -> GET
+[::1] = localhost ou 127.0.01 dans le thunder client
+
+
+composer require --dev orm-fixtures
+
+
+
+
+
+php bin/console make:entity --regenerate  ----- c'est pour regenerate tout les fonctionnes dans entity
+
+
+
+   <--- installation des kit.fontawesome.com ----
+    npm install @fortawesome/fontawesome-free
+
+
+
+
+   composer require matomo/device-detector
+
+
+
+  composer require symfony/filesystem

@@ -1,0 +1,5 @@
+il faut faire initialiser git avec:
+git init
+git add *
+
+git add .gitignore .env.dist si les fichiers ne sont pas ajouté
